@@ -1,4 +1,7 @@
 <?php 
-$sum = 5000 + 150;
-$sum = number_format($sum);
-echo $sum, '円です';
+echo '数字を入力してください';
+// $number = fgets(STDIN);
+// $number = trim($number);
+$number = trim(fgets(STDIN));
+echo $number, 'ですね？';
+
