@@ -4,14 +4,18 @@ $number = trim(fgets(STDIN));
 
 
 // 10よりも大きいかを判断する
-// if ($number > 10){
-//   echo '10よりも大きいです';
-// } else {
-//   echo '10以下です';
-// };
-
-if ($number > 10):
+if ($number > 10){
   echo '10よりも大きいです';
-else:
+} elseif($number == 10) {
+  echo '10です';
+} elseif($number <= 0) {
+  echo '0以下です';
+} else {
   echo '10以下です';
-endif;
+};
+
+// if ($number > 10):
+//   echo '10よりも大きいです';
+// else:
+//   echo '10以下です';
+// endif;
